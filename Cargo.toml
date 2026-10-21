@@ -1,0 +1,13 @@
+[package]
+name = "lupin"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Revenue-alignment MCP server: opportunity ledger, capability matching, Qompass/NTRanch lanes."
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = true
