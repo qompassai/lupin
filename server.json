@@ -22,7 +22,7 @@
   "packages": [
     {
       "fileSha256": "1399234b3c78b45dc7a6d8e9a0db6b165eac2be9de2d6cfb94d919798d515dcf",
-      "identifier": "https://github.com/qompassai/lupin/releases/download/v0.1.0/lupin-mcp-0.1.0-linux-x64.mcpb",
+      "identifier": "https://github.com/qompassai/lupin/releases/download/v1.0.0/lupin-mcp-1.0.0-linux-x64.mcpb",
       "registryType": "mcpb",
       "transport": {
         "type": "stdio"
@@ -34,6 +34,6 @@
     "url": "https://github.com/qompassai/lupin"
   },
   "title": "Lupin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "websiteUrl": "https://qompass.ai/solutions/lupin/"
 }
