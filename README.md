@@ -1,4 +1,5 @@
 # Lupin
+[![MCP Registry](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.modelcontextprotocol.io%2Fv0%2Fservers%2Fai.qompass%252Flupin%2Fversions&query=%24.servers%5B0%5D.server.version&label=MCP%20Registry)](https://registry.modelcontextprotocol.io/v0/servers/ai.qompass%2Flupin/versions)
 
 An MCP server for the Revenue Alignment Engine: an opportunity ledger
 and capability registry with lane-scoped access. Opportunities live in
