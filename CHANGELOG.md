@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0 — crates.io publication (2026-11-15)
+
+- Published to crates.io as `lupin-mcp` 1.0.0. The bare name `lupin` is held by an unrelated crate, so the package takes the fleet `-mcp` suffix (as slipway-mcp, broadside-mcp, periscope-mcp). Package rename only: the binary stays `lupin` (pinned via `[[bin]]`), the MCP server name stays `lupin`, and the tool surface is unchanged from the 2026-10-31 release below.
+- server.json gains a cargo package entry (`lupin-mcp` 1.0.0, stdio) alongside the existing MCPB bundle package.
+
 ## 1.0.0 — 2026-10-31
 
 - rmcp modern-only migration landed (rmcp 3.8.0, protocol 2026-07-28; WS2-W1 gate pass).
