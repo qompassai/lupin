@@ -1,0 +1,19 @@
+[package]
+name = "lupin-tui"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Fleet-pattern TUI for the lupin Revenue Alignment Engine MCP server"
+repository = "https://github.com/qompassai/lupin"
+
+[dependencies]
+crossterm = "0.29"
+ratatui = "0.30"
+# rmcp: the fleet-standard MCP SDK, same pin as the lupin server and
+# phlow's client. The TUI is a client only: it spawns the member's
+# own `lupin` server binary over stdio (DESIGN D2, server-only member).
+rmcp = { version = "=3.8.0", features = ["client", "transport-child-process", "transport-io"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["io-util", "macros", "process", "rt-multi-thread", "sync", "time"] }
+toml = "0.8"

@@ -1,0 +1,24 @@
+# Lupin trigger rules (DESIGN D4) — declared data, listed in the
+# Fleet panel. A rule not in this file and not in the panel does
+# not exist.
+#
+# Tonight lupin ships NO outbound rules. The one entry below is the
+# inbound side of DESIGN rule #3: phaedrus may draft a curated,
+# revenue-tagged finding into lupin as an opportunity draft (never
+# a committed ledger entry; lupin's lane rules apply on its side,
+# and the draft files through the server's candidate inbox).
+# Birth labels (BLOCH lane law, D-1030): origin_lane / content_label
+# are stamped on every rule; lupin's are qompass / sfw.
+
+[[rule]]
+id = "phaedrus-finding-to-lupin-draft"
+direction = "inbound"
+source_mcp = "phaedrus"
+target_mcp = "lupin"
+target_tool = "opportunity_draft"
+on_event = "finding.accepted"
+origin_lane = "qompass"
+content_label = "sfw"
+mode = "plan"
+enabled = true
+max_depth = 1
